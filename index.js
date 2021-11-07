@@ -1,28 +1,62 @@
-// Write your solution here!
-const cats =["Milo", "Otis", "Garfield"];
-cats;
+// // Write your solution here!
+// const cats =["Milo", "Otis", "Garfield"];
+// cats;
 
-function destructivelyAppendCat() {
-    return cats.push('Ralph');
+// function destructivelyAppendCat() {
+//     return cats.push('Ralph');
+// }
+// function destructivelyPrependCat() {
+//     return cats.unshift('Bob');
+// }
+// function destructivelyRemoveLastCat(){
+//     return cats.pop()
+// }
+// function destructivelyRemoveFirstCat(){
+//     return cats.shift();
+// }
+// function appendCat(){
+//     return [...cats, "Broom"]
+// }
+// function prependCat(){
+//     return ["Arnold",...cats]
+// }
+// function removeLastCat(){
+//     return cats.slice(0,cats.length-1);
+// }
+// function removeFirstCat(){
+//     return cats.slice(1);
+// }
+
+const cats = ['Milo', 'Otis', 'Garfield']
+
+function destructivelyAppendCat(){
+    return cats.push ('Ralph')    
 }
-function destructivelyPrependCat() {
+
+function destructivelyPrependCat(){
     return cats.unshift('Bob');
 }
+
 function destructivelyRemoveLastCat(){
     return cats.pop()
 }
+
 function destructivelyRemoveFirstCat(){
-    return cats.shift();
+    return cats.shift()
 }
+
 function appendCat(){
-    return [...cats, "Broom"]
+    return [...cats, 'Broom']
 }
+
 function prependCat(){
-    return ["Arnold",...cats]
+    return ['Arnold',...cats]
 }
+
 function removeLastCat(){
-    return cats.slice(0,cats.length-1);
+    return cats.slice(0,2)
 }
+
 function removeFirstCat(){
-    return cats.slice(1);
+    return cats.slice(1,3)
 }
